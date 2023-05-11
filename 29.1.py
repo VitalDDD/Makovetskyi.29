@@ -45,17 +45,19 @@ class HashTable:
             print(f"{index}: {item}")
 
 
-# Приклад використання:
+if __name__ == "__main__":
+            
+    # Приклад використання:
 
-ht = HashTable(10)
-ht.insert(5, "Hello")
-ht.insert(15, "world")  # Приклад виправлення колізії методом ланцюжків
-ht.insert(10, "Hi")
-print(ht.get(5))
-print(ht.get(15))
-ht.print_table()        # Друк хеш-таблиці
-ht.remove(5)            # Видалення елементу у хеш-таблиці
-print(ht.get(5))
+    ht = HashTable(10)
+    ht.insert(5, "Hello")
+    ht.insert(15, "world")  # Приклад виправлення колізії методом ланцюжків
+    ht.insert(10, "Hi")
+    print(ht.get(5))
+    print(ht.get(15))
+    ht.print_table()        # Друк хеш-таблиці
+    ht.remove(5)            # Видалення елементу у хеш-таблиці
+    print(ht.get(5))
 
 
 
